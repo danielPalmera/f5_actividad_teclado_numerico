@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-content: center;
+            align-items: center;
+        }
+
+        #contenedor{
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            flex-direction: row;
+            gap:20px;
+            flex-wrap: wrap;
+            width: 400px;
+        }
+
+        .tecla{
+            width: 100px;
+            height: 100px;
+            background-color: darkcyan;
+            color: white;
+            font-size: 5rem;
+            text-align: center;
+        }
+
+    </style>
+    <title>Ejercicio 1 - Teclado númerico</title>
+</head>
+<body>
+    <h1 id="titulo">Ejercicio 1 - Teclado númerico</h1>
+        <div id="contenedor"></div>
+        <script>
+            
+            let content = document.getElementById("contenedor");
+            content.style.display="flex";
+
+            let div = document.createElement("div");
+
+            for (let i = 1; i < 10; i++) {
+                div = document.createElement("div");
+                div.classList.add("tecla")
+                div.textContent=i;
+                content.appendChild(div);
+            }
+
+            div = document.createElement("div");
+            div.classList.add("tecla")
+            div.textContent="*";
+            content.appendChild(div);
+
+            div = document.createElement("div");
+            div.classList.add("tecla")
+            div.textContent=0;
+            content.appendChild(div);
+
+            div = document.createElement("div");
+            div.classList.add("tecla")
+            div.textContent="#";
+            content.appendChild(div);
+
+        </script>
+    </body>
+</html>
