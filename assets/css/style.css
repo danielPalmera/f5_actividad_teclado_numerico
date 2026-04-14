@@ -1,0 +1,27 @@
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+#contenedor{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: row;
+    gap:20px;
+    flex-wrap: wrap;
+    width: 400px;
+}
+
+.tecla{
+    width: 100px;
+    height: 100px;
+    background-color: darkcyan;
+    color: white;
+    font-size: 5rem;
+    text-align: center;
+    align-items: center;
+}
